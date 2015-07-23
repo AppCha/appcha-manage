@@ -1,0 +1,27 @@
+.breadcrumb>li+li:before {
+  padding: 0 10px;
+  color: $breadcrumbSepColor;
+  font: normal normal normal 18px FontAwesome;
+  top: 1px;
+  position: relative;
+  content: "\f105";
+}
+
+.breadcrumb {
+  padding: 0px;
+  padding-left: 15px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0px;
+  list-style: none;
+}
+.breadcrumb>li {
+  display: inline-block;
+  color: $breadcrumbActiveColor;
+  a{
+    color: $breadcrumbItemColor;
+    &:hover{
+        color: $breadcrumbActiveColor;
+    }
+  }
+}

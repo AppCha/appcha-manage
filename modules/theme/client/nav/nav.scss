@@ -1,0 +1,23 @@
+nav {
+  background-color: $navColor;
+  .brand-logo {
+    margin: 0 15px;
+    color: $brandColor;
+    i {
+      display: inline-block;
+      margin-right: 15px;
+      &:before {
+        font-size: 50px;
+        position: relative;
+        top: 7px;
+        line-height: 10px;
+        color: $brandIconColor;
+      }
+    }
+  }
+}
+.sub-nav {
+  background-color: lighten($navColor, 15%);
+  height: 30px;
+  line-height: 30px;
+}
