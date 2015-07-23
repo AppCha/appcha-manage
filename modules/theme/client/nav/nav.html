@@ -1,18 +1,17 @@
 <template name="MainNav">
   <ul id="nav-dropdown" class="dropdown-content">
-    <li><a href="#!">one</a></li>
-    <li><a href="#!">two</a></li>
+    <li><a href="#!">Edit Profile</a></li>
+
     <li class="divider"></li>
-    <li><a href="#!">three</a></li>
+    <li><a href="#!">Sign Out</a></li>
   </ul>
   <nav>
     <div class="nav-wrapper">
       <a href="/" class="brand-logo"><i class="fa fa-mobile"></i>AppCha!</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
+        {{> yield 'navitems'}}
         <li>
-          <a class="nav-dropdown-button" href="#!" data-activates="nav-dropdown">Dropdown<i class="material-icons right">arrow_drop_down</i></a>
+          <a class="nav-dropdown-button" href="#!" data-activates="nav-dropdown">{{profileName}}<i class="material-icons right">arrow_drop_down</i></a>
         </li>
       </ul>
     </div>
