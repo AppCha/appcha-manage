@@ -4,6 +4,8 @@
 </head>
 <template name="Layout.Base">
   {{> MainNav }}
+  <div id="content">
+    {{> yield}}
+  </div>
 
-  {{> yield}}
 </template>

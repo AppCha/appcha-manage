@@ -1,0 +1,14 @@
+body {
+  background-color: $bodyColor;
+  color: rgba(0, 0, 0, 0.87);
+  #content {
+    padding: 15px;
+  }
+}
+.card-panel {
+  .form-title {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}

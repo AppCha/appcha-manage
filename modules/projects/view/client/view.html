@@ -1,0 +1,14 @@
+<template name="Projects_View">
+  {{#contentFor 'pageTitle'}}
+    {{project.name}}
+  {{/contentFor}}
+  {{#contentFor 'breadcrumb'}}
+    <li><a href="{{pathFor 'Dashboard.Home'}}">Dashboard</a></li>
+    <li><a href="{{pathFor 'Dashboard.Home'}}">Projects</a></li>
+    <li>{{project.name}}</li>
+  {{/contentFor}}
+
+  Hello View  {{project.name}}
+
+
+</template>

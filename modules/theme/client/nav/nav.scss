@@ -1,4 +1,5 @@
 nav {
+  position: relative;
   background-color: $navColor;
   .brand-logo {
     margin: 0 15px;
@@ -15,9 +16,45 @@ nav {
       }
     }
   }
+  .avatar-dropdown {
+    img {
+      border-radius: 50px;
+      width: 50px;
+      border: 2px solid white;
+      display: block;
+      margin: 7px;
+
+      // position:relative;
+      // margin:0px;
+    }
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  .dropdown-content{
+    width:200px;
+  }
 }
-.sub-nav {
-  background-color: lighten($navColor, 15%);
-  height: 30px;
-  line-height: 30px;
+.breadcrumb-wrapper {
+  background-color: #eee;
+  padding: 15px;
+  > .row {
+    margin-bottom: 0;
+  }
+  .breadcrumbs-title {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    line-height: 1.804rem;
+  }
+}
+@media only screen and (max-width : 992px) {
+  nav .brand-logo {
+    left: inherit;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
 }

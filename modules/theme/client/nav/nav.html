@@ -3,24 +3,28 @@
     <li><a href="#!">Edit Profile</a></li>
 
     <li class="divider"></li>
-    <li><a href="#!">Sign Out</a></li>
+    <li><a href="#" class="sign-out">Sign Out</a></li>
   </ul>
   <nav>
     <div class="nav-wrapper">
       <a href="/" class="brand-logo"><i class="fa fa-mobile"></i>AppCha!</a>
-      <ul class="right hide-on-med-and-down">
+      <ul class="right ">
         {{> yield 'navitems'}}
         <li>
-          <a class="nav-dropdown-button" href="#!" data-activates="nav-dropdown">{{profileName}}<i class="material-icons right">arrow_drop_down</i></a>
+          <a class="nav-dropdown-button avatar-dropdown" href="#!" data-activates="nav-dropdown"><img src="{{gravatar}}" alt="" /></a>
         </li>
       </ul>
     </div>
   </nav>
-  <nav class="sub-nav">
-    <div class="nav-wrapper">
-      <ol class="breadcrumb">
-        {{> yield 'breadcrumb'}}
-      </ol>
+
+  <div class="breadcrumb-wrapper">
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <h5 class="breadcrumbs-title">{{>yield 'pageTitle'}}</h5>
+        <ol class="breadcrumb">
+          {{> yield 'breadcrumb'}}
+        </ol>
+      </div>
     </div>
-  </nav>
+  </div>
 </template>

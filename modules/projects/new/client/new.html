@@ -1,0 +1,37 @@
+<template name="Projects_New">
+  {{#contentFor 'pageTitle'}}
+    New Project
+  {{/contentFor}}
+
+  {{#contentFor 'breadcrumb'}}
+    <li><a href="{{pathFor 'Dashboard.Home'}}">Dashboard</a></li>
+    <li><a href="{{pathFor 'Dashboard.Home'}}">Projects</a></li>
+    <li>New</li>
+  {{/contentFor}}
+
+  <div class="row">
+    <div class="col s6">
+      <div class="card-panel">
+        <h4 class="form-title">Create a New Project</h4>
+        <p class="form-sub-title">
+          Before we start, lets pick a name for this project
+        </p>
+        <div class="row">
+          <form id="new-project-form" class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input  class="validate" id="name" type="text">
+                <label for="first_name">Project Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Submit
+                <i class="mdi-content-send right"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

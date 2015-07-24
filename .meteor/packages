@@ -12,3 +12,11 @@ useraccounts:materialize
 accounts-password
 iron:router
 fortawesome:fontawesome
+jparker:gravatar
+
+jagi:astronomy
+jagi:astronomy-relations
+jagi:astronomy-timestamp-behavior
+jagi:astronomy-sort-behavior
+jagi:astronomy-slug-behavior
+jagi:astronomy-validators

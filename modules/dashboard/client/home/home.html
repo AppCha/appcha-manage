@@ -1,0 +1,36 @@
+<template name="Dashboard_Home">
+  {{#contentFor "pageTitle"}}
+    Dashboard
+  {{/contentFor}}
+
+  <div class="row">
+    <div class="col s6">
+      <div class="collection with-header">
+        <div class="collection-header grey lighten-4">
+          <a href="{{pathFor 'Projects.New'}}" class="btn-floating pink btn-small waves-effect right waves-light"><i class="material-icons">add</i></a>
+          <h4>Your Projects</h4>
+        </div>
+        {{#if Template.subscriptionsReady}}
+          {{#each projects}}
+            {{> Dashboard_Project }}
+          {{/each}}
+        {{else}}
+          <div class="collection-item">
+            {{> Global_Loading}}
+          </div>
+        {{/if}}
+      </div>
+    </div>
+    <div class="col s6">
+      <div class="collection with-header">
+        <div class="collection-header grey lighten-4">
+          <a href="#" class="btn-floating  btn-small waves-effect right waves-light"><i class="material-icons">refresh</i></a>
+          <h4>Recent Activity</h4>
+        </div>
+        <div class="collection-item">
+          None yet.
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,20 @@
+.collection {
+  .collection-header {
+    font-size: 1.64rem;
+    font-weight: 200;
+    position : relative;
+    .btn-floating{
+      position: absolute;
+      bottom:-20px;
+      right: 10px
+    }
+  }
+  a.collection-item{
+    color: rgba(0, 0, 0, 0.87);
+    &:not(.active):hover {
+      background-color: color('grey', 'lighten-5');
+      color: color('pink', 'base');
+    }
+  }
+
+}

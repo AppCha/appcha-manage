@@ -1,5 +1,13 @@
-@import "modules/theme/client/scss/colors.scss";
+@import "modules/theme/client/scss/material-colors.scss";
 @import "modules/theme/client/scss/variables.scss";
 @import "modules/theme/client/nav/nav.scss";
 
 @import "modules/theme/client/breadcrumb/breadcrumb.scss";
+@import "modules/theme/client/body/body.scss";
+
+@import "modules/theme/client/typography/typography.scss";
+@import "modules/theme/client/dashboard/home.scss";
+@import "modules/theme/client/components/buttons.scss";
+@import "modules/theme/client/forms/card-panel.scss";
+@import "modules/theme/client/collections/collection.scss";
+@import "modules/theme/client/components/anchor.scss";
