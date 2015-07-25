@@ -1,0 +1,25 @@
+span {
+  &.badge {
+    &.development {
+      font-weight: 300;
+      font-size: 0.8rem;
+      color: #fff;
+      background-color: color('orange', 'darken-1');
+      border-radius: 2px;
+    }
+    &.live {
+      font-weight: 300;
+      font-size: 0.8rem;
+      color: #fff;
+      background-color: #26a69a;
+      border-radius: 2px;
+    }
+    &.publishing {
+      font-weight: 300;
+      font-size: 0.8rem;
+      color: #fff;
+      background-color: #26a69a;
+      border-radius: 2px;
+    }
+  }
+}

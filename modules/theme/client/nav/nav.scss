@@ -4,6 +4,14 @@ nav {
   .brand-logo {
     margin: 0 15px;
     color: $brandColor;
+    .primary {
+
+      // color: color('green', 'accent-3');
+    }
+    .secondary {
+
+      // color: color('lime', 'accent-1');
+    }
     i {
       display: inline-block;
       margin-right: 15px;
@@ -22,17 +30,18 @@ nav {
       width: 50px;
       border: 2px solid white;
       display: block;
-      margin: 7px;
-
-      // position:relative;
-      // margin:0px;
+      /* margin: 7px; */
+      top: 7px;
+      position: relative;
+      /* height: 100px; */
+      margin-bottom: 13px;
     }
     &:hover {
       background-color: transparent;
     }
   }
-  .dropdown-content{
-    width:200px;
+  .dropdown-content {
+    width: 200px;
   }
 }
 .breadcrumb-wrapper {
@@ -46,6 +55,50 @@ nav {
     padding: 10px 0;
     font-size: 1.5rem;
     line-height: 1.804rem;
+  }
+  ul.right {
+    margin: 0;
+    margin-right:-26px;
+    li {
+      -webkit-transition: background-color 0.3s;
+      -moz-transition: background-color 0.3s;
+      -o-transition: background-color 0.3s;
+      -ms-transition: background-color 0.3s;
+      transition: background-color 0.3s;
+      float: left;
+      padding: 0;
+      margin-top: -15px;
+      height: 107px;
+      width:100px;
+
+      margin-bottom: -15px;
+      &.active{
+        //background-color: $previewTabActiveBgColor;
+        border-bottom: 2px solid $previewTabActiveBgColor;
+      }
+      &:not(.active):hover {
+
+        //background-color: $previewTabHoverBgColor;
+        border-bottom: 2px solid $previewTabHoverBgColor;
+      }
+
+      a {
+        text-align: center;
+        width:100px;
+        padding-top: 30px;
+        font-size: 1rem;
+        color: color('blue-grey', 'darken-3');
+
+        display: block;
+        padding: 0 30px;
+
+        height:107px;
+
+        .fa{
+          padding-top: 25px;
+        }
+      }
+    }
   }
 }
 @media only screen and (max-width : 992px) {

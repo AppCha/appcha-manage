@@ -6,6 +6,7 @@ Template.MainNav.onRendered(function() {
 
 Template.MainNav.helpers({
   gravatar: function() {
+    if (!Meteor.user()) return "";
     var email = Meteor.user().emails[0].address;
     var options = {
       secure: true,

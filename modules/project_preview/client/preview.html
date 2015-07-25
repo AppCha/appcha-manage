@@ -1,0 +1,14 @@
+<template name="Project_Preview">
+  {{#contentFor 'subNavItems'}}
+    <li class="{{mobileActive}}">
+      <a class="tooltipped" data-position="top" data-tooltip="Mobile Preview" href="{{pathFor route='Projects.View' slug=project.slug query='previewing=mobile'}}"> <i class="fa fa-mobile fa-3x"></i></a>
+    </li>
+    <li class="{{tabletActive}}">
+      <a class="tooltipped" data-position="top" data-tooltip="Tablet Preview" href="{{pathFor route='Projects.View' slug=project.slug query='previewing=tablet'}}"> <i class="fa fa-tablet fa-4x"></i></a>
+    </li>
+  {{/contentFor}}
+
+  <div class="project-preview">
+      {{> Template.dynamic template=activePreviewView data=project}}
+  </div>
+</template>

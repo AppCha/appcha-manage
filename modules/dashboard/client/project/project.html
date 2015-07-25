@@ -1,6 +1,3 @@
 <template name="Dashboard_Project">
-
-          <a class="collection-item" href="{{pathFor route='Projects.View' slug=slug}}">{{name}}</a>
-
-
+  <a class="collection-item" href="{{pathFor route='Projects.View' slug=slug}}">{{name}}<span class="{{status}} badge">{{statusString}}</span></a>
 </template>

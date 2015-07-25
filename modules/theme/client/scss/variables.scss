@@ -1,8 +1,12 @@
-$navColor: color('cyan', 'base');
+$navColor: color('blue-grey', 'darken-3');
 $breadcrumbSepColor: color('grey', 'lighten-1');
 $breadcrumbItemColor: color('cyan', 'base');
 $breadcrumbActiveColor: color('grey', 'darken-1');
-$brandIconColor: color('grey', 'darken-4');
-$brandColor: color('cyan', 'lighten-5');
+$brandIconColor: color('grey', 'lighten-4');
+$brandColor: color('grey', 'lighten-5');
 $bodyColor: #fcfcfc;
 $primaryBtnColor: color('grey', 'darken-2');
+
+
+$previewTabActiveBgColor: color('teal', 'lighten-1'); //white;// darken(color('blue-grey', 'lighten-5'), 5%);
+$previewTabHoverBgColor: color('blue-grey', 'lighten-3');

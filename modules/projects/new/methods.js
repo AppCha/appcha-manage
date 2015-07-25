@@ -7,6 +7,9 @@ Meteor.methods({
 
     project.users.push({user_id: userId, role: 'owner'});
     if (project.validate()){
+      if(Meteor.isServer){
+        project.status = 'development';
+      }
       project.save();
       return project;
     }

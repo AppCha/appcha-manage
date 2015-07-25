@@ -1,0 +1,17 @@
+.preview-col {
+  position: relative;
+  .project-preview {
+    margin: -15px -15px -15px 15px;
+    // background-color: $previewTabActiveBgColor;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    top:0px;
+    left:0px;
+    padding:15px;
+
+    .enabled{
+      padding-top: 10px;
+    }
+  }
+}
