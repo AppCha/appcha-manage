@@ -18,10 +18,6 @@ Template.Project_Preview.onRendered(function() {
 });
 
 Template.Project_Preview.helpers({
-
-  project: function() {
-    return Projects.findOne({slug: Router.current().params.slug});
-  },
   activePreviewView: function() {
     if (Router.current().params.query.previewing) {
       switch (Router.current().params.query.previewing) {
