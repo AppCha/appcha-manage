@@ -2,30 +2,38 @@
   position: relative;
   .project-preview {
     margin: -15px -15px -15px 15px;
-    // background-color: $previewTabActiveBgColor;
-    position:absolute;
-    right:0px;
-    bottom:0px;
-    top:0px;
-    left:0px;
-    padding:15px;
-
-    .enabled{
+    padding: 15px;
+    .enabled {
       padding-top: 10px;
     }
-    .collection-item{
-      &.preview{
-        background-image: url(/images/blueprint-7.png);
-          background-position: 16px 36px;
+    a {
+      &.open-window {
+        .fa {
+          position: absolute;
+          right: 24px;
+          top: 157px;
+          color: #c6c6c6;
+        }
+      }
+      &:hover{
+        .fa{
+          color: $linkColor; //color('blue-grey', 'darken-2');
+        }
+      }
+    }
+    .collection-item {
+      &.preview {
+        background-image: url("/images/blueprint-7.png");
+        background-position: 16px 36px;
+
         // background-color: #eee;
         margin-top: -10px;
         margin-left: -42px;
         margin-right: -42px;
       }
     }
-    .device-previews{
-      .device{
-
+    .device-previews {
+      .device {
         margin-top: 50px;
         text-align: center;
       }
