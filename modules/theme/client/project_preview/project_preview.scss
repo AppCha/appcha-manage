@@ -13,6 +13,16 @@
     .enabled{
       padding-top: 10px;
     }
+    .collection-item{
+      &.preview{
+        background-image: url(/images/blueprint-7.png);
+          background-position: 16px 36px;
+        // background-color: #eee;
+        margin-top: -10px;
+        margin-left: -42px;
+        margin-right: -42px;
+      }
+    }
     .device-previews{
       .device{
 

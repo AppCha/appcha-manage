@@ -1,0 +1,21 @@
+.tabs {
+
+  .tab {
+    a {
+      color: $tabColor;
+      &:hover{
+        color: darken($tabColor, 15%);
+      }
+    }
+  }
+  .indicator {
+    background-color: $tabColor;
+  }
+}
+
+.collection-item.preview{
+  .tabs{
+    width:auto!important;
+    border-bottom: 1px solid #e0e0e0;
+  }
+}
